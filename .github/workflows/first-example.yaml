@@ -5,11 +5,14 @@ jobs:
     first_job:
         runs-on: ubuntu-latest 
         steps:
-            - name: Welcome message
-              run: echo "Steve"
+          - name: Chekout Repo
+            uses: actions/checkout@v4  
+          
+          - name: Welcome message
+            run: echo "Steve"
 
-            - name: List files
-              run: ls
+          - name: List files
+            run: ls
 
-            - name: Read file
-              run: cat README.md
+          - name: Read file
+            run: cat README.md
